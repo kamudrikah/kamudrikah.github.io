@@ -6,11 +6,19 @@ durianApp.config(function($routeProvider){
       templateUrl: 'main.html',
       controller: 'MainCtrl'
     }).
+    when('/portfolio', {
+      templateUrl: 'portfolio.html',
+      controller: 'PortfolioCtrl'
+    }).
     otherwise({
       redirectTo: '/'
     });
 });
 
 durianApp.controller('MainCtrl', function($scope){
-  //code
+  console.log("MainCtrl");
+});
+
+durianApp.controller('PortfolioCtrl', function($scope){
+  console.log("PortfolioCtrl");
 });
